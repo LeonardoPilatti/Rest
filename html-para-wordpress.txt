@@ -57,3 +57,16 @@ ele é inteligente o suficiente para saber se precisa mostrar apenas um ou uma s
 <?php endwhile; else: ?>     /// else, se não tiver o post, apresente a mensagem de que não tem post;
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>     // aqui termina o if
+
+12 - Criar campos personalizados para edição:
+/// páginas -> entrar em uma delas, tipo o Contato -> Opções de Tela (no canto superior direito) -> marcar Campos Personalizados;
+
+13 - Modificar o HTML com o CMB2:
+	<p>
+		<?php
+			$home = get_page_by_title('Menu da Semana')->ID;  /// aqui estou selecionando a página pelo titulo dela
+			the_field('comida1', $home);    /// aqui estou usando a funcao the_field do functions.php, passando o ID e a página que está
+		?>
+	</p>
+
+/// se for somente na página que quero mudar, coloco: <?php the_field('comida1'); ?>
