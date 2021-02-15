@@ -1,10 +1,12 @@
 		<footer>
 			<nav class="nav-footer">
-				<ul>
-					<li class="current_page_item"><a href="/testewp.test/">Menu</a></li>
-					<li><a href="http://testewp.test/sobre/">Sobre</a></li>
-					<li><a href="/testewp.test/contato/">Contato</a></li>
-				</ul>
+				<?php
+					$args = array(
+						'menu' => 'principal',
+						'container' => false
+					);
+					wp_nav_menu( $args );
+				?>
 			</nav>
 
 			<p>Rest © <?php echo date("Y"); ?>. Alguns direitos reservados.</p>
