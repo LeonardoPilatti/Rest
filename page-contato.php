@@ -10,7 +10,7 @@
 		<h2 class="subtitulo"><?php the_title(); ?></h2>  <!-- esse the_title é para modificar o titulo da pagina em 
 																páginas -> em cima de link permanente -->
 		<div class="grid-16">
-			<a href="https://www.google.com.br/maps" target="_blank"><img src="<?php the_field('localizacao_rest'); ?>" alt="<?php the_field('textoAlt'); ?>"></a>
+			<a href="<?php the_field('linkMapa'); ?>" target="_blank"><img src="<?php the_field('localizacao_rest'); ?>" alt="<?php the_field('textoAlt'); ?>"></a>
 		</div>
 
 		<div class="grid-1-3 contato-item">

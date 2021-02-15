@@ -25,6 +25,12 @@ function cmb2_fields_home() {
     ], // modelo de página
   ]);
 
+  $cmb->add_field([
+    'name' => 'Descrição da página para SEO',
+    'id' => 'description_seo',
+    'type' => 'text',
+  ]);
+
    // Adiciona um campo ao bloco criado
    $cmb->add_field([
      'name' => 'Primeiro Prato',
@@ -124,6 +130,12 @@ function cmb2_fields_sobre() {
     ], // modelo de página
   ]);
 
+  $cmb->add_field([
+    'name' => 'Descrição da página para SEO',
+    'id' => 'description_seo',
+    'type' => 'text',
+  ]);
+
   // Adiciona um campo ao bloco criado
   $cmb->add_field([
     'name' => 'Foto Rest',
@@ -187,6 +199,12 @@ function cmb2_fields_contato() {
       'value' => 'page-contato.php',
     ], // modelo de página
   ]);
+  
+  $cmb->add_field([
+    'name' => 'Descrição da página para SEO',
+    'id' => 'description_seo',
+    'type' => 'text',
+  ]);
 
   // Adiciona um campo ao bloco criado
   $cmb->add_field([
@@ -204,6 +222,13 @@ function cmb2_fields_contato() {
     'desc'    => 'Aqui é colocado a descrição da imagem como sobre o que a imagem é',
     'id' => 'textoAlt',
     'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Link do mapa',
+    'desc'    => 'Aqui é o colocado o link que você quer que a pessoa clique no mapa e vá para o link',
+    'id' => 'linkMapa',
+    'type' => 'text_url',
   ]);
 
   $cmb->add_field([
@@ -282,6 +307,7 @@ function cmb2_fields_contato() {
     'id' => 'pais',
     'type' => 'text',
   ]);
+
 }
 ?>
 

@@ -70,3 +70,5 @@ ele é inteligente o suficiente para saber se precisa mostrar apenas um ou uma s
 	</p>
 
 /// se for somente na página que quero mudar, coloco: <?php the_field('comida1'); ?>
+
+14 - Para o ano aparecer automaticamente no site, coloco <?php echo date("Y"); ?> onde quero o ano;

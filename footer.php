@@ -7,7 +7,7 @@
 				</ul>
 			</nav>
 
-			<p>Rest © 2021. Alguns direitos reservados.</p>
+			<p>Rest © <?php echo date("Y"); ?>. Alguns direitos reservados.</p>
 			<p>Desenvolvido por Leonardo Pilatti.</p>
 		</footer>
 
