@@ -155,11 +155,96 @@ function cmb2_fields_contato() {
   // Adiciona um campo ao bloco criado
   $cmb->add_field([
     'name' => 'Localização Rest',
+    'desc'    => 'Aqui é colcocado a imagem da localizacao do Restaurante e deve ser de 800px x 600px',
     'id' => 'localizacao_rest',
     'type' => 'file',
     'options' => [
       'url' => false,
     ]
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Texto alternativo da imagem',
+    'desc'    => 'Aqui é colocado a descrição da imagem como sobre o que a imagem é',
+    'id' => 'textoAlt',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Primeiro item do contato',
+    'desc'    => 'Aqui é o titulo do primeiro item do contato',
+    'id' => 'primeiroItemContato',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Telefone do Restaurante',
+    'desc'    => 'Aqui é o telefone do restaurante e muda no cabeçalho também',
+    'id' => 'telefone',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'E-mail do Restaurante',
+    'id' => 'email',
+    'type' => 'text_email',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Facebook do Restaurante',
+    'id' => 'facebook',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Primeiro item dos horários',
+    'desc'    => 'Aqui é o titulo do primeiro item dos horários',
+    'id' => 'primeiroItemHorario',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Horário de funcionamento',
+    'desc'    => 'Horário de segunda a sexta',
+    'id' => 'funcionamento',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Horário de sabado',
+    'id' => 'sabado',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Horario de domingo',
+    'id' => 'domingo',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Primeiro item do endereço',
+    'desc'    => 'Aqui é o titulo do primeiro item dos endereços',
+    'id' => 'primeiroItemEndereco',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'rua',
+    'id' => 'rua',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Cidade',
+    'id' => 'cidade',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'País',
+    'id' => 'pais',
+    'type' => 'text',
   ]);
 }
 ?>

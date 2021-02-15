@@ -10,26 +10,26 @@
 		<h2 class="subtitulo"><?php the_title(); ?></h2>  <!-- esse the_title é para modificar o titulo da pagina em 
 																páginas -> em cima de link permanente -->
 		<div class="grid-16">
-			<a href="https://www.google.com.br/maps" target="_blank"><img src="<?php the_field('localizacao_rest'); ?>" alt="Fachada do Rest"></a>
+			<a href="https://www.google.com.br/maps" target="_blank"><img src="<?php the_field('localizacao_rest'); ?>" alt="<?php the_field('textoAlt'); ?>"></a>
 		</div>
 
 		<div class="grid-1-3 contato-item">
-			<h2>Dados</h2>
-			<p>21 2422-9999</p>
-			<p>contato@rest.com</p>
-			<p>facebook.com/rest/</p>
+			<h2><?php the_field('primeiroItemContato'); ?></h2>
+			<p><?php the_field('telefone'); ?></p>
+			<p><?php the_field('email'); ?></p>
+			<p><?php the_field('facebook'); ?></p>
 		</div>
 		<div class="grid-1-3 contato-item">
-			<h2>Horários</h2>
-			<p>Segunda à Sexta: 10 às 23</p>
-			<p>Sábado: 14 às 23</p>
-			<p>Domingo: 14 às 22</p>
+			<h2><?php the_field('primeiroItemHorario'); ?></h2>
+			<p><?php the_field('funcionamento'); ?></p>
+			<p><?php the_field('sabado'); ?></p>
+			<p><?php the_field('domingo'); ?></p>
 		</div>
 		<div class="grid-1-3 contato-item">
-			<h2>Endereço</h2>
-			<p>Rua Marechal, 29</p>
-			<p>Copacabana - Rio de Janeiro</p>
-			<p>Brasil - Terra - Via Láctea</p>
+			<h2><?php the_field('primeiroItemEndereco'); ?></h2>
+			<p><?php the_field('rua'); ?></p>
+			<p><?php the_field('cidade'); ?></p>
+			<p><?php the_field('pais'); ?></p>
 		</div>
 	</section>
 

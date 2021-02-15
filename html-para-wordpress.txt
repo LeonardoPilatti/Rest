@@ -61,7 +61,7 @@ ele é inteligente o suficiente para saber se precisa mostrar apenas um ou uma s
 12 - Criar campos personalizados para edição:
 /// páginas -> entrar em uma delas, tipo o Contato -> Opções de Tela (no canto superior direito) -> marcar Campos Personalizados;
 
-13 - Modificar o HTML com o CMB2:
+13 - Modificar o HTML com o CMB2:   /// CMB2 é um plugin do Wordpress;  /// https://github.com/CMB2/CMB2/wiki/Field-Types
 	<p>
 		<?php
 			$home = get_page_by_title('Menu da Semana')->ID;  /// aqui estou selecionando a página pelo titulo dela

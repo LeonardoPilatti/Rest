@@ -17,14 +17,14 @@
 		<header>
 			<nav>
 				<ul>
-					<li class="current_page_item"><a href="/testewp.test/">Menu</a></li>
+					<li class="current_page_item"><a href="http://testewp.test/">Menu</a></li>
 					<li><a href="/testewp.test/sobre/">Sobre</a></li>
 					<li><a href="/testewp.test/contato/">Contato</a></li>
 				</ul>
 			</nav>
 
 			<h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rest.png" alt="Rest"></h1>
-
-			<p>Rua Marechal 29 – Copacabana – Rj</p>
-			<p class="telefone">2422-9201</p>
+			<?php $contato = get_page_by_title('Contato')->ID; ?>
+			<p><?php the_field('rua', $contato); ?> – <?php the_field('cidade', $contato); ?></p>
+			<p class="telefone"><?php the_field('telefone', $contato); ?> </p>
 		</header>
