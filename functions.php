@@ -133,6 +133,42 @@ function cmb2_fields_sobre() {
       'url' => false,
     ]
   ]);
+
+  $cmb->add_field([
+    'name' => 'Primeiro item do sobre',
+    'id' => 'historia',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Texto do primeiro item do sobre',
+    'id' => 'textoHistoria',
+    'type' => 'textarea',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Segundo item do sobre',
+    'id' => 'visao',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Texto do segundo item do sobre',
+    'id' => 'textoVisao',
+    'type' => 'textarea',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Terceiro item do sobre',
+    'id' => 'valores',
+    'type' => 'text',
+  ]);
+
+  $cmb->add_field([
+    'name' => 'Texto do terceiro item do sobre',
+    'id' => 'textoValores',
+    'type' => 'textarea',
+  ]);
 }
 
 
